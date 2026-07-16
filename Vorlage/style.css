@@ -1,0 +1,101 @@
+:root {
+	--text: #fff;
+	--container: rgba(255, 255, 255, 0.12);
+	--btn: rgba(255, 255, 255, 0.123);
+}
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+		Arial;
+	color: var(--text);
+	box-sizing: border-box;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	margin-top: 50px;
+}
+
+body {
+	overflow-y: auto;
+	min-height: 100%;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+		url("../LogoVorstellung/images/background.jpg") no-repeat center center;
+	background-size: cover;
+	z-index: -10;
+	filter: brightness(1.5);
+}
+
+a {
+	width: 90%;
+	text-align: center;
+	padding: 5px;
+	color: var(--text);
+}
+
+#topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 90%;
+	text-align: center;
+	font-weight: 600;
+	z-index: 1000;
+	background-color: var(--container);
+	font-size: 32px;
+}
+
+.container {
+	background-color: transparent;
+	box-shadow: 4px 16px 20px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	max-width: 70%;
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#sec {
+	padding-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 36px auto;
+	padding: 32px;
+}
+
+.get-to-vorstellung-btn {
+	margin: 10px;
+	padding: 16px;
+	background: var(--btn);
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+	box-shadow: 4px 16px 16px 1px rgba(0, 0, 0, 0.15);
+	border: none;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
