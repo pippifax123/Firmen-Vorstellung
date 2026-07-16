@@ -36,7 +36,7 @@ function set() {
 		btn.textContent = firmname;
 
 		btn.addEventListener("click", () => {
-			const url = `../LogoVorstellung/Firmen/?type=${encodeURIComponent(key)}`;
+			const url = `../Firmen/?type=${encodeURIComponent(key)}`;
 			window.location.href = url;
 		});
 
